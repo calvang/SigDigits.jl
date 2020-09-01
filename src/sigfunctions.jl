@@ -1,22 +1,24 @@
-module SigFigs
-
-using Decimals
+function use_sigdigits(expr)
+    """Evaluate input expression while respecting significant figures."""
+    ex = Meta.parse(expr)
+    return sigdigits(ex)
+end
 
 function print_color(text, r, g, b)
     """Output text in specified color"""
     print("\e[1m\e[38;2;$r;$g;$b;249m",text)
 end
 
-function start()
+function sig_start()
     """Start significant figure evaluation mode with default colors"""
-    start(100, 200, 255)
+    sig_start(100, 200, 255)
 end
 
-function start(r, g, b)
+function sig_start(r::Int, g::Int, b::Int)
     """Start significant figure evaluation mode with specified colors."""
     println("Starting input mode...")
     while true
-        print_color("sig>", 100, 200, 255)
+        print_color("sig>", r, g, b)
         print_color(" ", 240, 240, 240)
         input = chomp(readline())
         if strip(input) == "exit"; break
@@ -42,10 +44,6 @@ end
 function sigdigits(ex)
     """Calculate the solution for an expression to the correct number of significant figures."""
     return eval_sigdigits(ex)
-    # Meta.show_sexpr(ex)
-    # println(num_sigfigs)
-    # ans = eval(ex)
-    # return round(ans, sigdigits=num_sigfigs)
 end
 
 function find_min_sig(args, f::Function)
@@ -76,7 +74,7 @@ function eval_sigdigits(ex)
     end
 end
 
-function replace(str, first, last, new)
+function str_replace(str, first, last, new)
     """Return string with indexes from 'first' to 'last' replaced by 'new.'"""
     front = str[1: first]
     back = str[last+1: end]
@@ -136,5 +134,3 @@ function count_nonzero_decimalplaces(val)
     end 
     return nonzeros
 end
-
-end # module

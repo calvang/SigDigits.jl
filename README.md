@@ -12,6 +12,20 @@ This module can handle nested elementary operations while respecting significant
 
 ## Usage
 
-To start input mode, simply type `start`, and you will be prompted with the significant figure evaluation mode.
+To start input mode, simply type `sig_start()`, and you will be prompted with the significant figure evaluation mode.
 
 To exit input mode, type `exit`.
+
+You can also directly evaluate using significant figures by calling `use_sigdigits(<expression>)`.
+
+This package also provides the functionality to calculate the number of significant figures a value has via the command: `count_sigdigits(<value>)`, as well as support for counting decimal places with `count_decimalplaces(<value>)` and nonzero decimal places with `count_nonzero_decimalplaces(<value>)`.
+
+I also included the random functionality of replacing a part of a string because I implemented it during the development of this package: `str_replace(<string>,<start_index>,<end_index>,<value>)`.
+
+## TODO:
+
+- [ ] Update documentation
+- [ ] Complete unit testing of all cases
+- [ ] Implement more accessible functions
+- [ ] Define build
+- [ ] Publish package

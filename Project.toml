@@ -1,4 +1,4 @@
-name = "SigFigs"
+name = "SigDigits"
 uuid = "399ecfe6-ebc1-11ea-351e-51bbfb0c0a9f"
 authors = ["calvang <calvin.huang5@gmail.com>"]
 version = "0.1.0"
