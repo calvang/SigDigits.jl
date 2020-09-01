@@ -1,0 +1,8 @@
+name = "SigFigs"
+uuid = "399ecfe6-ebc1-11ea-351e-51bbfb0c0a9f"
+authors = ["calvang <calvin.huang5@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Decimals = "abce61dc-4473-55a0-ba07-351d65e31d42"
+Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
