@@ -1,0 +1,4 @@
+#!/bin/bash
+# Script to deploy documentation for SigDigits.jl
+
+cp -r docs/build/* ../SigDigitsDocs

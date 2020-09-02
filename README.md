@@ -1,24 +1,24 @@
-# SigFigs.jl
+# SigDigits.jl
 
-Got tired of manually calculating significant figures, so I made this.
+Got tired of manually calculating significant digits, so I made this.
 
-SigFigs.jl is a Julia package that automatically handles significant figures in all rudimentary calculations, namely addition, subtraction, multiplication, and division.
+SigDigits.jl is a Julia package that automatically handles significant digits in all rudimentary calculations, namely addition, subtraction, multiplication, and division.
 
 ## Description
 
-Calculations are achieved using Julia's built-in metaprogramming and significant figure rounding.
+Calculations are achieved using Julia's built-in metaprogramming and significant digit rounding.
 
-This module can handle nested elementary operations while respecting significant figures.
+This module can handle nested elementary operations while respecting significant digits.
 
 ## Usage
 
-To start input mode, simply type `sig_start()`, and you will be prompted with the significant figure evaluation mode.
+To start input mode, simply type `sig_start()`, and you will be prompted with the significant digit evaluation mode.
 
 To exit input mode, type `exit`.
 
-You can also directly evaluate using significant figures by calling `use_sigdigits(<expression>)`.
+You can also directly evaluate using significant digits by calling `use_sigdigits(<expression>)`.
 
-This package also provides the functionality to calculate the number of significant figures a value has via the command: `count_sigdigits(<value>)`, as well as support for counting decimal places with `count_decimalplaces(<value>)` and nonzero decimal places with `count_nonzero_decimalplaces(<value>)`.
+This package also provides the functionality to calculate the number of significant digits a value has via the command: `count_sigdigits(<value>)`, as well as support for counting decimal places with `count_decimalplaces(<value>)` and nonzero decimal places with `count_nonzero_decimalplaces(<value>)`.
 
 I also included the random functionality of replacing a part of a string because I implemented it during the development of this package: `str_replace(<string>,<start_index>,<end_index>,<value>)`.
 
@@ -26,6 +26,6 @@ I also included the random functionality of replacing a part of a string because
 
 - [ ] Update documentation
 - [ ] Complete unit testing of all cases
-- [ ] Implement more accessible functions
+- [X] Implement more accessible functions
 - [ ] Define build
 - [ ] Publish package
