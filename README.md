@@ -1,5 +1,7 @@
 # SigDigits.jl
 
+![build](https://travis-ci.org/calvang/SigDigits.svg?branch=master)
+
 Got tired of manually calculating significant digits, so I made this.
 
 SigDigits.jl is a Julia package that automatically handles significant digits in all rudimentary calculations, namely addition, subtraction, multiplication, and division.
