@@ -1,6 +1,6 @@
 # SigDigits.jl
 
-![build](https://travis-ci.org/calvang/SigDigits.svg?branch=master)
+![build](https://travis-ci.org/calvang/SigDigits.jl.svg?branch=master)
 
 Got tired of manually calculating significant digits, so I made this.
 
